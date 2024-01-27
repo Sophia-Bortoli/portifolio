@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Courier Prime", monospace;
+}
+
+
+
+/* Area header */
+.header {
+    position: fixed;
+    width: 100vw;
+    display: grid;
+    padding: 25px;
+    border-bottom: 1px solid black;
+    grid-template-areas: 
+        'logo logo logo logo rotbar';
+}
+#logo {
+    grid-area: logo;
+}
+#rotbar {
+    grid-area: rotbar;
+}
+.header .logo  i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: default;
+}
+.header .logo div {
+    font-size: 1.2rem;
+}
+.header ul {
+    display: flex;
+    align-items: center;
+}
+.header ul li {
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.header ul li:hover{
+    border-bottom: 2px solid orangered;
+}
