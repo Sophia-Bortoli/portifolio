@@ -13,7 +13,7 @@ body{
     overflow: hidden;
 }
 .background{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/img/Picsart_23-07-28_13-52-33-619.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/img/Slide1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -33,11 +33,13 @@ header{
     gap: 3rem;
     font-weight: 300;
     cursor: pointer; 
-    }
+
+}
 .cabecalho-link a{
+    display: inline-flex;
     color: #fff;
     font-size: 22px;
-    }
+}
 .cabecalho-link a:hover{
     color: #2ecc71;
     transition: 0.3s all;
@@ -71,7 +73,7 @@ button:hover{
     transition: 5.5s;
 }
 .container-text{
-    padding: 15% 0 0 15%;
+    padding: 15% 5% 0 15%;
 }
 .text h3{
     color: #fff;
@@ -104,9 +106,35 @@ button:hover{
 }
 
 
+@media screen and (max-width:950px) {
+    .background{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/img/slide2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (max-width:760px) {
+    .cabecalho-link a{
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width:700px){
-    .cabecalho-link {
-        display: none;
+    .cabecalho-link{
+        display: block;
+        margin-left: 45%;
+        background-color: #3a3838b6;
+        width: 48%;
+        height: 100vh;
+        padding: 20px;
+    }
+    .cabecalho-link a {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
+        width: 120px;
     }
     .text h3{
         font-size: 20px;
@@ -117,5 +145,29 @@ button:hover{
     .text p{
         font-size: 15px;
     }
-}
+    header{
+        padding-left: 1.5rem;
+        padding-top: 0;
+    }
     
+}
+@media screen and (max-width:375px) {
+    .cabecalho-link{
+        margin-top: 0;
+        display: block;
+        margin-left: 45%;
+        background-color: #3a3838b6;
+        width: 45%;
+        height: 100vh;
+        padding: 20px;
+    }
+    .cabecalho-link a {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    button{
+        font-size: 10px;
+        width: 100px;
+    }
+}
+
